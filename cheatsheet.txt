@@ -1,0 +1,37 @@
+https://tailwindcss.com/docs/installation
+
+npx create-react-app dh-app
+
+sudo apt update && sudo apt install --no-install-recommends yarn
+yarn --version
+
+npm install tailwindcss
+
+Add Tailwind to your CSS
+index.CSS
+    @tailwind base;
+
+    @tailwind components;
+
+    @tailwind utilities; 
+
+
+npx tailwindcss init -p
+create, if not created, ==>postcss.config.js
+
+yarn add postcss-cli
+
+yarn add autoprefixer@9.7.5
+or
+yarn add autoprefixer
+
+under scripts{}
+    "build:css": "postcss src/components/css/index.css -o src/tailwind.css",
+    "watch:css": "postcss src/components/css/index.css -o src/tailwind.css -w",
+    "start": "yarn build:css && react-scripts start",
+    "build": "yarn build:css && react-scripts build",
+
+
+yarn build:css
+replace at index.js : index.css ==> tailwind.css
+
