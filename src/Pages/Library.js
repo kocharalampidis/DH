@@ -1,12 +1,12 @@
 // libraries imports
 import React from "react";
 
-function Profile() {
+function Library() {
 	return (
 		<div class=' '>
-			<h1>this is the Profile</h1>
+			<h1>this is the library</h1>
 		</div>
 	);
 }
 
-export default Profile;
+export default Library;
