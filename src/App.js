@@ -11,7 +11,7 @@ import Library from "./Pages/Library";
 import Eshop from "./Pages/Eshop";
 import Profile from "./Pages/Profile";
 import Blogspot from "./Pages/Blogspot";
-
+import Team from "./Pages/Team";
 function App() {
 	return (
 		<div class=' '>
@@ -25,6 +25,7 @@ function App() {
 						<Route path='/Eshop' component={Eshop} />
 						<Route path='/Profile' component={Profile} />
 						<Route path='/Blogspot' component={Blogspot} />
+						<Route path='/Team' component={Team} />
 					</Switch>
 				</div>
 			</BrowserRouter>
