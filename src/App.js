@@ -14,7 +14,7 @@ import Blogspot from "./Pages/Blogspot";
 import Team from "./Pages/Team";
 function App() {
 	return (
-		<div class=' '>
+		<div class=' bg-red-800 '>
 			<BrowserRouter>
 				<Navbar />
 				<div class=''>
