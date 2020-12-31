@@ -23,9 +23,9 @@ function initialize() {
 
 		const port = require('../src/app/config/serverConfig');
 		httpServer
-			.listen(port)
+			.listen(port.HOST)
 			.on('listening', () => {
-				console.log(`Web server listening on localhost:${port}`);
+				console.log(`Web server listening on http://localhost:${port.HOST}`);
 
 				resolve();
 			})
