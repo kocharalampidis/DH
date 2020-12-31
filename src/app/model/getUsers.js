@@ -1,15 +1,15 @@
 /** @format */
 
-const sql = require('./dbConnection');
+const sql = require('../configs/Database_Configs/Database_Connection/Db_Connector');
+const Users_table_handler = require('../configs/Database_Configs/Table_Handlers/User_handler');
+// // constructor
+// const Customer = function (customer) {
+// 	this.email = customer.email;
+// 	this.name = customer.name;
+// };
 
-// constructor
-const Customer = function (customer) {
-	this.email = customer.email;
-	this.name = customer.name;
-};
-
-Customer.getAll = (result) => {
-	sql.query('SELECT * FROM test_table', (err, res) => {
+Users_table_handler.getAll = (result) => {
+	sql.query(`SELECT * FROM ${Users_table_handler.TABLE}`, (err, res) => {
 		if (err) {
 			console.log('error: ', err);
 			result(null, err);
@@ -21,4 +21,4 @@ Customer.getAll = (result) => {
 	});
 };
 
-module.exports = Customer;
+module.exports = Users_table_handler;

@@ -21,7 +21,7 @@ function initialize() {
 
 		require('./app/routes/getItems')(app);
 
-		const port = require('../src/app/config/serverConfig');
+		const port = require('../src/app/configs/serverConfig');
 		httpServer
 			.listen(port.HOST)
 			.on('listening', () => {

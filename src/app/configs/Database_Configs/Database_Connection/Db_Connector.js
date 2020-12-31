@@ -2,7 +2,7 @@
 
 const mysql = require('mysql'); //require mysql
 const util = require('util');
-const database_config = require('../config/Database_Configs/dbConfig');
+const database_config = require('./dbConfig');
 
 //create pool connection of MySQL
 var pool = mysql.createPool({
