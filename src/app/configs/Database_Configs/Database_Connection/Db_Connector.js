@@ -37,6 +37,6 @@ pool.getConnection((err, connection) => {
 	}
 });
 
-pool.query = util.promisify(pool.query); // returns a primise object
+pool.query = util.promisify(pool.query); // returns a promise object
 
 module.exports = pool; //export the pool variable for globally use
