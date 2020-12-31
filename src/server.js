@@ -20,6 +20,7 @@ function initialize() {
 		});
 
 		require('./app/routes/getItems')(app);
+		require('./app/routes/getUsers')(app);
 
 		const port = require('../src/app/configs/serverConfig');
 		httpServer
