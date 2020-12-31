@@ -1,13 +1,13 @@
 /** @format */
 
 module.exports = (app) => {
-	const customers = require('../controllers/showItems');
+	const Test_Items = require('../controllers/showItems');
 
 	// // Create a new Customer
 	// app.post('/customers', customers.create);
 
 	// Retrieve all Customers
-	app.get('/customers', customers.findAll);
+	app.get('/Test_Items', Test_Items.findAll);
 
 	// // Retrieve a single Customer with customerId
 	// app.get('/customers/:customerId', customers.findOne);
