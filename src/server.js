@@ -21,7 +21,7 @@ function initialize() {
 
 		require('./app/routes/getItems')(app);
 
-		const port = process.env.port || 5500;
+		const port = require('../src/app/config/serverConfig');
 		httpServer
 			.listen(port)
 			.on('listening', () => {
@@ -52,24 +52,3 @@ function close() {
 }
 
 module.exports.close = close;
-
-// const express = require('express');
-// const bodyParser = require('body-parser');
-
-// const app = express();
-
-// // parse requests
-// app.use(bodyParser.json());
-
-// // simple test route
-// app.get('/', (req, res) => {
-// 	res.json({ message: 'Welcome to REST API with node-express-mysql' });
-// });
-
-// // require('./app/routes/customer.routes.js')(app);
-
-// // set port number, initialize port server
-// const PORT = 3000;
-// app.listen(PORT, () => {
-// 	console.log(`server initialized at http://localhost:${PORT}`);
-// });
