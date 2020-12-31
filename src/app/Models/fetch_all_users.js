@@ -1,12 +1,7 @@
 /** @format */
 
-const sql = require('../configs/Database_Configs/Database_Connection/Db_Connector');
-const Users_table_handler = require('../configs/Database_Configs/Table_Handlers/User_handler');
-// // constructor
-// const Customer = function (customer) {
-// 	this.email = customer.email;
-// 	this.name = customer.name;
-// };
+const sql = require('../Configs/Database_Configs/Database_Connection/Db_Connector');
+const Users_table_handler = require('../Configs/Database_Configs/Table_Handlers/User_handler');
 
 Users_table_handler.getAll = (result) => {
 	sql.query(`SELECT * FROM ${Users_table_handler.TABLE}`, (err, res) => {

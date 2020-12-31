@@ -1,6 +1,6 @@
 /** @format */
 
-const Test_Items = require('../model/fetch_all_Items');
+const Test_Items = require('../Models/fetch_all_Items');
 
 // Retrieve all Customers from the database.
 exports.findAll = (req, res) => {

@@ -19,10 +19,10 @@ function initialize() {
 			res.end('Hello World!');
 		});
 
-		require('./app/routes/getItems')(app);
-		require('./app/routes/getUsers')(app);
+		require('./app/Routes/getItems')(app);
+		require('./app/Routes/getUsers')(app);
 
-		const port = require('../src/app/configs/serverConfig');
+		const port = require('../src/app/Configs/serverConfig');
 		httpServer
 			.listen(port.HOST)
 			.on('listening', () => {

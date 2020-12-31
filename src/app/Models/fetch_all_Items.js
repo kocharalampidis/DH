@@ -1,9 +1,9 @@
 /** @format */
 
-const sql = require('../configs/Database_Configs/Database_Connection/Db_Connector');
-const test_table = require('../configs/Database_Configs/dbTables');
+const sql = require('../Configs/Database_Configs/Database_Connection/Db_Connector');
+const test_table = require('../Configs/Database_Configs/dbTables');
 
-const Test_Items = require('../configs/Database_Configs/Table_Handlers/Test_Items_handler');
+const Test_Items = require('../Configs/Database_Configs/Table_Handlers/Test_Items_handler');
 
 Test_Items.getAll = (result) => {
 	sql.query(`SELECT * FROM ${test_table.ITEMS_TABLE}`, (err, res) => {

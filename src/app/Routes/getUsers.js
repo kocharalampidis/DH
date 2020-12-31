@@ -1,7 +1,7 @@
 /** @format */
 
 module.exports = (app) => {
-	const Users = require('../controllers/showUsers');
+	const Users = require('../Controllers/showUsers');
 	// // Create a new Customer
 	// app.post('/customers', customers.create);
 
