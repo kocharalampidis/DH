@@ -15,4 +15,10 @@ module.exports = Users;
 //create exports of MySQL Tables
 module.exports = {
 	TABLE: 'users',
+	// id: 'id',
+	// first_name: 'first_name',
+	// last_name: 'last_name',
+	// email: 'email',
+	// gender: 'gender',
+	// added: 'added',
 };

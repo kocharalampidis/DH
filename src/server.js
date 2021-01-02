@@ -19,8 +19,8 @@ function initialize() {
 			res.end('Hello World!');
 		});
 
-		require('./app/Routes/getItems')(app);
-		require('./app/Routes/getUsers')(app);
+		require('./app/Routes/getItems_route')(app);
+		require('./app/Routes/Users_Routes/users_route')(app);
 
 		const port = require('../src/app/Configs/serverConfig');
 		httpServer

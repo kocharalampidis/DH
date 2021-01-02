@@ -1,6 +1,6 @@
 /** @format */
 
-const Users_model = require('../Models/fetch_all_users');
+const Users_model = require('../Models/Users_Model/fetch_all_users');
 
 // Retrieve all Customers from the database.
 exports.findAll = (req, res) => {
